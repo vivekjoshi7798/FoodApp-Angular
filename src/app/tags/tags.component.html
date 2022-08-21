@@ -1,0 +1,5 @@
+<div *ngIf="tags">
+    <a *ngFor="let item of tags" routerLink="/tag/{{item.name}}">
+        {{item.name}} ({{item.count}})
+    </a>
+</div>
